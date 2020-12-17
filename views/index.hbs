@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    
+<div class="flex-box-container-1">
+    <div id="clock"></div>
+</div>
+<form id="form" action="/clockedIn" method="POST">
+<hr>
+<div class="flex-outer">
+  
+      <div>
+        <Label id="first_name" for="first_name">First Name:</Label><br>
+        <input type="text" name="first_name" class="form-control" placeholder="FirstName*">
+      </div>
+       
+      <div>
+        <Label for="last_name" >Last Name:</Label><br>
+        <input type="text" name="last_name" class="form-control" placeholder="LastName*">
+      </div>
+
+
+<br>
+       <div>
+        <button id="btn" type="submit" class="form-control" >CLock In</button>
+       </div>
+</form> 
+       <form id="form2" action="/clockOut" method="POST">
+
+        <div>
+        <Label id="first_name" for="first_name">First Name:</Label><br>
+        <input type="text" name="first_name" class="form-control" placeholder="FirstName*">
+      </div>
+       
+      <div>
+        <Label for="last_name" >Last Name:</Label><br>
+        <input type="text" name="last_name" class="form-control" placeholder="LastName*">
+      </div>
+
+         <br>
+
+         <div>
+        <button id="btn2" type="submit" class="form-control" >CLock Out</button>
+       </div>
+       </form>
+     
+     </div>
+
+ <style>
+            body {
+              background-image: url('bkg3.jpg');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+            </style>
+<script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
