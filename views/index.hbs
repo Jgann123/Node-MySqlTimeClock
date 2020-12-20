@@ -16,25 +16,29 @@
 <form id="form" action="/clockedIn" method="POST">
 <hr>
 <div class="flex-outer">
-  
+    <h1>Clock In.</h1>
       <div>
         <Label id="first_name" for="first_name">First Name:</Label><br>
-        <input type="text" name="first_name" class="form-control" placeholder="FirstName*">
+        <input id="firstName" type="text" name="first_name" class="form-control" placeholder="FirstName*">
       </div>
        
       <div>
         <Label for="last_name" >Last Name:</Label><br>
-        <input type="text" name="last_name" class="form-control" placeholder="LastName*">
+        <input id="lastName" type="text" name="last_name" class="form-control" placeholder="LastName*">
+      </div>
+      <br>
+      <div>
+        <input for="date" type="date" name="date" class="form-control"></input>
       </div>
 
 
 <br>
        <div>
-        <button id="btn" type="submit" class="form-control" >CLock In</button>
+        <button id="btn" type="submit" class="form-control" onclick="clockIn()">CLock In</button>
        </div>
 </form> 
        <form id="form2" action="/clockOut" method="POST">
-
+           <h1>Clock Out.</h1>
         <div>
         <Label id="first_name" for="first_name">First Name:</Label><br>
         <input type="text" name="first_name" class="form-control" placeholder="FirstName*">
@@ -44,11 +48,17 @@
         <Label for="last_name" >Last Name:</Label><br>
         <input type="text" name="last_name" class="form-control" placeholder="LastName*">
       </div>
+      <br>
+      <div>
+        <input for="date" type="date" name="date" class="form-control"></input>
+      </div>
+      
+<br>
 
-         <br>
+    
 
          <div>
-        <button id="btn2" type="submit" class="form-control" >CLock Out</button>
+        <button id="btn2" type="submit" class="form-control" onclick="clockOut()">CLock Out</button>
        </div>
        </form>
      

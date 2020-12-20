@@ -26,23 +26,9 @@ currentTime();
 
 
 
-function clockIn(){
-  var firstName = document.getElementById('firstName').value;
-  var lastName = document.getElementById('lastName'),value;
-  var clockedIn = true;
-  var date = new Date();
-  var data = firstName + lastName + date;
   
-  if(clockedIn == true) {
-    console.log(data);
-  }
-  else {
-    alert('Nobody is clocked in!');
-  }
-  }
-  
-  
-  function clockIn(){
+
+  var writeLog = function clockIn(){
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     var clockedIn = false;
@@ -51,18 +37,25 @@ function clockIn(){
   
   if(firstName && lastName){
     clockedIn = true;
+    alert('success');
   }
   else {
-    alert('naw')
+    alert('hmmm?');
   }
   
   if(clockedIn == true) {
     console.log(status);
   }
   else{
-    console.log('no one is here')
+    console.log("no one is here");
   }
-  
-  }
-  
 
+
+  }
+  
+  
+  function clockOut(){
+    if (writeLog){
+      
+    }
+  }
