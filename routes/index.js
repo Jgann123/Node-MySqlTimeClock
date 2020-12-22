@@ -12,10 +12,10 @@ module.exports = router;
 var mysql = require('mysql');
 
 var connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password' ,
-  port: '3030',
+  host: 'timecloc.mysql.database.azure.com',
+  user: 'JGann123@timecloc',
+  password: 'Nicole18' ,
+  port: '3306',
   database: 'time_clock'
   
  
@@ -65,8 +65,9 @@ router.post('/clockedIn', function(req, res) {
  var app = require('http');``
 
  router.get('/clockedIn', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('/clockedIn', { Message: 'Success!' });
 });
+
 
 
 router.post('/clockOut', function(req, res) {

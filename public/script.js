@@ -28,7 +28,7 @@ currentTime();
 
   
 
-  var writeLog = function clockIn(){
+ function clockIn(){
     var firstName = document.getElementById('firstName').value;
     var lastName = document.getElementById('lastName').value;
     var clockedIn = false;
@@ -53,9 +53,29 @@ currentTime();
 
   }
   
-  
+
   function clockOut(){
-    if (writeLog){
-      
-    }
+    var firstName = document.getElementById('firstName').value;
+    var lastName = document.getElementById('lastName').value;
+    var clockedOut = false;
+    var date = new Date();
+    var status = firstName + lastName + date;
+  
+  if(firstName && lastName){
+    clockedOut = true;
+    alert('success');
   }
+  else {
+    alert('Success');
+  }
+  
+  if(clockedOut == true) {
+    console.log(status);
+  }
+  else{
+    console.log("no one is here");
+  }
+
+
+  }
+  
